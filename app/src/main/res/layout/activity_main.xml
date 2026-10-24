@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_bg"
+    tools:context=".MainActivity">
+
+    <!-- Main Menu button: outlined, yellow border + yellow text -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mainMenuBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="@string/main_menu"
+        android:textColor="@color/main_button_color"
+        android:textAllCaps="false"
+        app:strokeColor="@color/main_button_color"
+        app:cornerRadius="12dp"/>
+
+    <!-- Score section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Player 1 card (active border) -->
+        <LinearLayout
+            android:id="@+id/playerOnelayout"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/black_border">
+
+            <TextView
+                android:id="@+id/playerOneName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/player_one"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/Lavender"
+                android:maxLines="1"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/playerOneScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/score_text_zero"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="@color/score_text_color"/>
+
+            <ImageView
+                android:id="@+id/imgP1Symbol"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ximage"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:contentDescription="X"/>
+
+        </LinearLayout>
+
+        <!-- Player 2 card -->
+        <LinearLayout
+            android:id="@+id/playerTwolayout"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/white_box">
+
+            <TextView
+                android:id="@+id/playerTwoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/player_two"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/Lavender"
+                android:maxLines="1"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/playerTwoScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/score_text_zero"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="@color/score_text_color"/>
+
+            <ImageView
+                android:id="@+id/imgP2Symbol"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/oimage"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:contentDescription="O"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Turn indicator pill -->
+    <TextView
+        android:id="@+id/tvTurnIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:text=""
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:background="@drawable/turn_indicator_human"
+        android:textColor="#000000"/>
+
+    <!-- Board — takes remaining space, grid centered vertically -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView android:id="@+id/image1"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:adjustViewBounds="true" android:padding="18dp"/>
+
+            <ImageView android:id="@+id/image2"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:adjustViewBounds="true" android:padding="18dp"/>
+
+            <ImageView android:id="@+id/image3"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:adjustViewBounds="true" android:padding="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView android:id="@+id/image4"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:adjustViewBounds="true" android:padding="18dp"/>
+
+            <ImageView android:id="@+id/image5"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:adjustViewBounds="true" android:padding="18dp"/>
+
+            <ImageView android:id="@+id/image6"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:adjustViewBounds="true" android:padding="18dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView android:id="@+id/image7"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:adjustViewBounds="true" android:padding="18dp"/>
+
+            <ImageView android:id="@+id/image8"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:adjustViewBounds="true" android:padding="18dp"/>
+
+            <ImageView android:id="@+id/image9"
+                android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1"
+                android:background="@drawable/white_box" android:layout_margin="5dp"
+                android:padding="18dp" android:adjustViewBounds="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

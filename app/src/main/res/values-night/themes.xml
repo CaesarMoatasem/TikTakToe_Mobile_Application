@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="Theme.TicTacToe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Yellow accent drives buttons, progress bar, input strokes, etc. -->
+        <item name="colorPrimary">@color/Lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender_dark</item>
+        <!-- Black text/icon on yellow button — only valid use of black-on-yellow -->
+        <item name="colorOnPrimary">@color/lavender_on_primary</item>
+        <item name="colorSecondary">@color/lavender_light</item>
+        <item name="colorSecondaryVariant">@color/lavender_dark</item>
+        <item name="colorOnSecondary">#000000</item>
+        <!-- Pure black for every background and surface -->
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:colorBackground">#000000</item>
+        <item name="colorSurface">#000000</item>
+        <!-- White body text on black backgrounds -->
+        <item name="colorOnBackground">#FFFFFF</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <!-- Explicit white so EditText/TextInputEditText text is always readable -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#AAAAAA</item>
+        <item name="materialButtonStyle">@style/Widget.TicTacToe.Button</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetTheme</item>
+    </style>
+
+</resources>

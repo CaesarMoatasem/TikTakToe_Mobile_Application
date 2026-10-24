@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="player_one">Joueur 1</string>
+    <string name="player_two">Joueur 2</string>
+    <string name="score_text">Score: %1$d</string>
+    <string name="score_text_zero">Score: 0</string>
+    <string name="main_menu">Menu Principal</string>
+    <string name="winner_msg">%1$s est le gagnant</string>
+    <string name="draw_msg">Match nul</string>
+    <string name="win_percentage">Taux de victoire - %1$s: %2$.1f%%, %3$s: %4$.1f%%</string>
+    <string name="history">Historique</string>
+    <string name="game_history">Historique du jeu</string>
+    <string name="win_percentages_label">Pourcentage de victoire:</string>
+    <string name="recent_matches_label">Matchs Récents:</string>
+    <string name="back">Retour</string>
+    <string name="clear_history">Vider l\'historique</string>
+    <string name="clear_multiplayer">Vider Multi-joueur</string>
+    <string name="clear_single_player">Vider joueur solo</string>
+    <string name="no_history">Aucun historique disponible</string>
+    <string name="no_stats">Aucune statistique disponible</string>
+    <string name="enter_players_names">2 JOUEURS</string>
+    <string name="enter_p1_name">Nom du joueur 1</string>
+    <string name="enter_p2_name">Nom du joueur 2</string>
+    <string name="start_game">Commencer le jeu</string>
+    <string name="randomize_symbols">🎲  Aléatoire</string>
+    <string name="singular_player">vs IA</string>
+    <string name="select_difficulty">Choisir la difficulté</string>
+    <string name="easy">Débutant</string>
+    <string name="medium">Intermédiaire</string>
+    <string name="genius">Génie</string>
+    <string name="high_score_congrats">Félicitations %1$s! \nNouveau record: %2$d</string>
+    <string name="multiplayer_stats">Stat Multi-joueur:\n%1$s</string>
+    <string name="single_player_stats">Stat joueur solo:\n%1$s</string>
+    <string name="high_scores_label">Meilleurs scores</string>
+    <string name="player_label">Joueur</string>
+    <string name="score_label">Score</string>
+    <string name="english">Anglais</string>
+    <string name="french">Français</string>
+    <string name="german">Allemand</string>
+    <string name="turkish">Turc</string>
+
+    <!-- Auth -->
+    <string name="login">Connexion</string>
+    <string name="register">S\'inscrire</string>
+    <string name="welcome_back">Bon retour</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="email_or_username">E-mail ou nom d\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="email">E-mail</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="dont_have_account">Pas de compte ? S\'inscrire</string>
+    <string name="already_have_account">Déjà un compte ? Se connecter</string>
+    <string name="fill_all_fields">Veuillez remplir tous les champs</string>
+    <string name="no_account_register">Aucun compte trouvé. Veuillez vous inscrire.</string>
+    <string name="invalid_credentials">E-mail ou mot de passe invalide.</string>
+    <string name="username_too_short">Le nom d\'utilisateur doit comporter au moins 3 caractères.</string>
+    <string name="invalid_email">Veuillez entrer une adresse e-mail valide.</string>
+    <string name="password_too_short">Le mot de passe doit comporter au moins 8 caractères.</string>
+    <string name="passwords_dont_match">Les mots de passe ne correspondent pas.</string>
+    <string name="registration_success">Bienvenue ! Votre compte a été créé.</string>
+
+    <!-- Main Menu -->
+    <string name="hi_user">Bonjour, %1$s !</string>
+    <string name="game_title">TIC TAC TOE</string>
+    <string name="choose_mode">Choisir un mode de jeu</string>
+    <string name="two_players">2 Joueurs</string>
+    <string name="vs_ai">vs IA</string>
+    <string name="multiplayer_desc">Défiez un ami sur le même appareil</string>
+    <string name="vs_ai_desc">Affrontez l\'ordinateur</string>
+
+    <!-- Settings -->
+    <string name="settings">Paramètres</string>
+    <string name="dark_mode">Mode sombre</string>
+    <string name="dark_mode_icon">🌙  Mode sombre</string>
+    <string name="language">Langue</string>
+    <string name="language_icon">🌐  Langue</string>
+    <string name="logout">Déconnexion</string>
+    <string name="gemini_api_key">Clé API Gemini</string>
+    <string name="gemini_api_key_icon">✨  Clé API Gemini</string>
+    <string name="tap_to_set_key">Appuyez pour configurer la clé API Gemini</string>
+    <string name="gemini_key_saved">Clé API enregistrée</string>
+    <string name="save">Enregistrer</string>
+    <string name="cancel">Annuler</string>
+
+    <!-- Difficulty -->
+    <string name="choose_difficulty">Choisir la difficulté de l\'IA</string>
+    <string name="difficulty_easy">Facile</string>
+    <string name="difficulty_medium">Moyen</string>
+    <string name="difficulty_hard">Difficile</string>
+    <string name="difficulty_easy_desc">Gemini joue décontracté – idéal pour les débutants</string>
+    <string name="difficulty_medium_desc">Gemini applique une stratégie – un vrai défi</string>
+    <string name="difficulty_hard_desc">Gemini à pleine puissance – réfléchissez à chaque coup</string>
+    <string name="gemini_thinking">Gemini réfléchit…</string>
+    <string name="gemini_powered_subtitle">✨  Propulsé par Gemini IA</string>
+
+    <!-- Game -->
+    <string name="ai_thinking">L\'IA réfléchit…</string>
+    <string name="connection_error_title">Erreur de connexion</string>
+    <string name="connection_error_msg">Impossible de se connecter à l\'IA. Voulez-vous jouer contre l\'ordinateur ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+    <!-- History -->
+    <string name="section_multiplayer">👥  MULTIJOUEUR</string>
+    <string name="section_single_player">🤖  JOUEUR SOLO</string>
+    <string name="no_data_yet">Aucune donnée</string>
+    <string name="stat_played">Joués</string>
+    <string name="stat_won">Gagnés</string>
+    <string name="stat_lost">Perdus</string>
+    <string name="stat_draw">Nuls</string>
+    <string name="stat_win_rate">% Victoire</string>
+    <string name="high_scores_section">🏆  MEILLEURS SCORES</string>
+    <string name="recent_matches_section">📋  MATCHS RÉCENTS</string>
+
+    <!-- Layout / Firebase strings -->
+    <string name="sign_in_subtitle">Connectez-vous pour continuer à jouer</string>
+    <string name="start_again">Recommencer</string>
+    <string name="back_nav">‹ Retour</string>
+    <string name="loading">Chargement…</string>
+    <string name="error_load_history">Impossible de charger l\'historique</string>
+    <string name="error_auth">Erreur d\'authentification. Veuillez vous reconnecter.</string>
+    <string name="draw_result">Nul</string>
+    <string name="vs">vs</string>
+    <string name="result_placeholder">Résultats</string>
+</resources>

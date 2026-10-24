@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="16dp"
+        android:background="@color/primary_bg"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:id="@+id/btnHistoryBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/back"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/game_history"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginEnd="48dp"/>
+    </LinearLayout>
+
+    <!-- Loading indicator -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/black"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/historyData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="40dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:visibility="gone">
+
+            <!-- ── MULTIPLAYER SECTION ── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/section_multiplayer"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Lavender"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnClearMulti"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear_multiplayer"
+                    android:textColor="@color/Lavender"
+                    android:textSize="12sp"
+                    app:rippleColor="@color/lavender_light"/>
+            </LinearLayout>
+
+            <!-- High Scores sub-label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/high_scores_section"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/lavender_light"
+                android:letterSpacing="0.10"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Multiplayer pie chart (programmatically filled) -->
+            <LinearLayout
+                android:id="@+id/chartContainerMulti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Multiplayer stats cards (programmatically filled) -->
+            <LinearLayout
+                android:id="@+id/containerMultiStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Recent Matches sub-label (shown by Java only when matches exist) -->
+            <TextView
+                android:id="@+id/labelMultiRecentMatches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recent_matches_section"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/lavender_light"
+                android:letterSpacing="0.10"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <!-- Multiplayer match rows (programmatically filled) -->
+            <LinearLayout
+                android:id="@+id/containerMultiMatches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/colorOnBackground"
+                android:alpha="0.12"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- ── SINGLE PLAYER SECTION ── -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/section_single_player"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Lavender"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnClearSingle"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear_single_player"
+                    android:textColor="@color/Lavender"
+                    android:textSize="12sp"
+                    app:rippleColor="@color/lavender_light"/>
+            </LinearLayout>
+
+            <!-- High Scores sub-label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/high_scores_section"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/lavender_light"
+                android:letterSpacing="0.10"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Single player pie chart (programmatically filled) -->
+            <LinearLayout
+                android:id="@+id/chartContainerSingle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Single player stats cards (programmatically filled) -->
+            <LinearLayout
+                android:id="@+id/containerSingleStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Recent Matches sub-label -->
+            <TextView
+                android:id="@+id/labelSingleRecentMatches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recent_matches_section"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/lavender_light"
+                android:letterSpacing="0.10"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <!-- Single player match rows (programmatically filled) -->
+            <LinearLayout
+                android:id="@+id/containerSingleMatches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

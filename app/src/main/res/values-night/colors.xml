@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Yellow accent — text, icons, strokes, progress bar, small highlights ONLY. Never backgrounds. -->
+    <color name="Lavender">#FFD700</color>
+    <color name="main_button_color">#FFD700</color>
+    <color name="lavender_dark">#CC9900</color>
+    <color name="lavender_darker">#FFD700</color>
+    <color name="lavender_light">#FFB700</color>
+    <color name="lavender_surface">#000000</color>
+    <color name="lavender_on_primary">#000000</color>
+    <!-- Black for all background surfaces -->
+    <color name="primary_bg">#000000</color>
+    <color name="auth_bg_start">#000000</color>
+    <color name="auth_bg_end">#000000</color>
+    <!-- Text colours -->
+    <color name="text_hint">#AAAAAA</color>
+    <color name="score_text_color">#FFFFFF</color>
+    <color name="difficulty_title_color">#FFFFFF</color>
+</resources>

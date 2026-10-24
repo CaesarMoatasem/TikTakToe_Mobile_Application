@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="player_one">Birinci Oyuncu</string>
+    <string name="player_two">İkinci Oyuncu</string>
+    <string name="score_text">Skor: %1$d</string>
+    <string name="score_text_zero">Skor: 0</string>
+    <string name="main_menu">Ana Menü</string>
+    <string name="winner_msg">Kazanan %1$s</string>
+    <string name="draw_msg">Berabere</string>
+    <string name="win_percentage">Kazanma Oranı - %1$s: %2$.1f%%, %3$s: %4$.1f%%</string>
+    <string name="history">Oyun Geçmişi</string>
+    <string name="game_history">Oyun Geçmişi</string>
+    <string name="win_percentages_label">Kazanma Oranı:</string>
+    <string name="recent_matches_label">Son Oynanlar:</string>
+    <string name="back">Geri</string>
+    <string name="clear_history">Geçmişi Temizle</string>
+    <string name="clear_multiplayer">Çok Oyunculu Geçmişi Temizle</string>
+    <string name="clear_single_player">Tek Oyunculu Geçmişi Temizle</string>
+    <string name="no_history">Oyun Geçmişi bulunamadı</string>
+    <string name="no_stats">İstatistik bulunamadı</string>
+    <string name="enter_players_names">2 OYUNCU</string>
+    <string name="enter_p1_name">1. Oyuncu Adı</string>
+    <string name="enter_p2_name">2. Oyuncu Adı</string>
+    <string name="start_game">Oyuna Başla</string>
+    <string name="randomize_symbols">🎲  Rastgele</string>
+    <string name="singular_player">vs Yapay Zeka</string>
+    <string name="select_difficulty">Zorluk Seç</string>
+    <string name="easy">Kolay</string>
+    <string name="medium">Orta</string>
+    <string name="genius">Zor</string>
+    <string name="high_score_congrats">Tebrikler %1$s! \nYeni Yüksek Skor: %2$d</string>
+    <string name="multiplayer_stats">Çok Oyunculu İstatistikler:\n%1$s</string>
+    <string name="single_player_stats">Tek Oyunculu İstatistikler:\n%1$s</string>
+    <string name="high_scores_label">Yüksek Skorlar</string>
+    <string name="player_label">Oyuncu</string>
+    <string name="score_label">Skor</string>
+    <string name="english">İngilizce</string>
+    <string name="french">Fransızca</string>
+    <string name="german">Almanca</string>
+    <string name="turkish">Türkçe</string>
+
+    <!-- Auth -->
+    <string name="login">Giriş Yap</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="welcome_back">Tekrar Hoş Geldiniz</string>
+    <string name="create_account">Hesap Oluştur</string>
+    <string name="email_or_username">E-posta veya Kullanıcı Adı</string>
+    <string name="password">Şifre</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="email">E-posta</string>
+    <string name="confirm_password">Şifreyi Onayla</string>
+    <string name="dont_have_account">Hesabınız yok mu? Kayıt Ol</string>
+    <string name="already_have_account">Zaten hesabınız var mı? Giriş Yap</string>
+    <string name="fill_all_fields">Lütfen tüm alanları doldurun</string>
+    <string name="no_account_register">Hesap bulunamadı. Lütfen kayıt olun.</string>
+    <string name="invalid_credentials">Geçersiz e-posta veya şifre.</string>
+    <string name="username_too_short">Kullanıcı adı en az 3 karakter olmalıdır.</string>
+    <string name="invalid_email">Lütfen geçerli bir e-posta adresi girin.</string>
+    <string name="password_too_short">Şifre en az 8 karakter olmalıdır.</string>
+    <string name="passwords_dont_match">Şifreler eşleşmiyor.</string>
+    <string name="registration_success">Hoş geldiniz! Hesabınız oluşturuldu.</string>
+
+    <!-- Main Menu -->
+    <string name="hi_user">Merhaba, %1$s!</string>
+    <string name="game_title">TIC TAC TOE</string>
+    <string name="choose_mode">Oyun modu seçin</string>
+    <string name="two_players">2 Oyuncu</string>
+    <string name="vs_ai">vs Yapay Zeka</string>
+    <string name="multiplayer_desc">Aynı cihazda bir arkadaşınıza meydan okuyun</string>
+    <string name="vs_ai_desc">Bilgisayara karşı oynayın</string>
+
+    <!-- Settings -->
+    <string name="settings">Ayarlar</string>
+    <string name="dark_mode">Karanlık Mod</string>
+    <string name="dark_mode_icon">🌙  Karanlık Mod</string>
+    <string name="language">Dil</string>
+    <string name="language_icon">🌐  Dil</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="gemini_api_key">Gemini API Anahtarı</string>
+    <string name="gemini_api_key_icon">✨  Gemini API Anahtarı</string>
+    <string name="tap_to_set_key">Gemini API anahtarını yapılandırmak için dokunun</string>
+    <string name="gemini_key_saved">API anahtarı kaydedildi</string>
+    <string name="save">Kaydet</string>
+    <string name="cancel">İptal</string>
+
+    <!-- Difficulty -->
+    <string name="choose_difficulty">Yapay Zeka Zorluğunu Seçin</string>
+    <string name="difficulty_easy">Kolay</string>
+    <string name="difficulty_medium">Orta</string>
+    <string name="difficulty_hard">Zor</string>
+    <string name="difficulty_easy_desc">Gemini rahat oynar – yeni başlayanlar için ideal</string>
+    <string name="difficulty_medium_desc">Gemini strateji uygular – gerçek bir meydan okuma</string>
+    <string name="difficulty_hard_desc">Gemini tam güçte – her hamleyi düşünün</string>
+    <string name="gemini_thinking">Gemini düşünüyor…</string>
+    <string name="gemini_powered_subtitle">✨  Gemini Yapay Zeka tarafından desteklenir</string>
+
+    <!-- Game -->
+    <string name="ai_thinking">Yapay Zeka düşünüyor…</string>
+    <string name="connection_error_title">Bağlantı Hatası</string>
+    <string name="connection_error_msg">Yapay zekaya bağlanılamadı. Bilgisayara karşı oynamak ister misiniz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+
+    <!-- History -->
+    <string name="section_multiplayer">👥  ÇOK OYUNCULU</string>
+    <string name="section_single_player">🤖  TEK OYUNCULU</string>
+    <string name="no_data_yet">Henüz veri yok</string>
+    <string name="stat_played">Oynandı</string>
+    <string name="stat_won">Kazanıldı</string>
+    <string name="stat_lost">Kaybedildi</string>
+    <string name="stat_draw">Berabere</string>
+    <string name="stat_win_rate">Kazanma %</string>
+    <string name="high_scores_section">🏆  YÜKSEK SKORLAR</string>
+    <string name="recent_matches_section">📋  SON OYUNLAR</string>
+
+    <!-- Layout / Firebase strings -->
+    <string name="sign_in_subtitle">Oynamaya devam etmek için giriş yapın</string>
+    <string name="start_again">Tekrar Oyna</string>
+    <string name="back_nav">‹ Geri</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="error_load_history">Geçmiş yüklenemedi</string>
+    <string name="error_auth">Kimlik doğrulama hatası. Lütfen tekrar giriş yapın.</string>
+    <string name="draw_result">Berabere</string>
+    <string name="vs">vs</string>
+    <string name="result_placeholder">Sonuçlar</string>
+</resources>
