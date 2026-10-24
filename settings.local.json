@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.\\\\gradlew.bat assembleDebug *)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\TicTacToe\" -Depth 2 -Directory | Where-Object { $_.FullName -notmatch '\\\\.gradle|\\\\.idea|\\\\.kotlin|build|\\\\.dist' } | Select-Object -ExpandProperty FullName | Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\TicTacToe\" -Depth 1 | Where-Object { -not $_.PSIsContainer } | Select-Object Name)",
+      "Bash(./gradlew assembleDebug *)",
+      "Bash(Test-Path *)"
+    ]
+  }
+}
